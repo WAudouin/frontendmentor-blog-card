@@ -23,6 +23,11 @@
     align-items: flex-start;
     gap: 12px;
 
+    &-title:hover {
+      color: var(--yellow);
+      cursor: pointer;
+    }
+
     &-category {
       background-color: var(--yellow);
       padding: 4px 12px;
