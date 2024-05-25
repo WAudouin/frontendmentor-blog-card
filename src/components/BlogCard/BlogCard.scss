@@ -8,9 +8,10 @@
   border-radius: 20px;
   border: 1px solid var(--black);
   filter: drop-shadow(8px 8px 0px #000000);
+  transition: all 0.3s;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  justify-content: space-between;
 
   &__headerImage {
     border-radius: 10px;
@@ -31,16 +32,22 @@
     &-description {
       color: var(--grey);
     }
+  }
 
-    &-userDisplay {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 12px;
+  &__author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
 
-      &-avatar {
-        width: 32px;
-      }
+    &-avatar {
+      width: 32px;
     }
+  }
+
+  &:hover {
+    transform: translate(-4px, -4px);
+    filter: drop-shadow(16px 16px 0px #000000);
+    transition: all 0.3s;
   }
 }

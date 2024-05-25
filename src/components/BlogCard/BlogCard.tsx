@@ -27,16 +27,14 @@ const BlogCard = ({
         </span>
         <span className="blogCard__info-title heading">{title}</span>
         <span className="blogCard__info-description bodyM">{description}</span>
-        <div className="blogCard__info-userDisplay">
-          <img
-            className="blogCard__info-userDisplay-avatar"
-            src={user.avatar}
-            alt="avatar"
-          />
-          <div className="blogCard__info-userDisplay-name bodyS-bold">
-            {user.name}
-          </div>
-        </div>
+      </div>
+      <div className="blogCard__author">
+        <img
+          className="blogCard__author-avatar"
+          src={user.avatar}
+          alt="avatar"
+        />
+        <div className="blogCard__author-name bodyS-bold">{user.name}</div>
       </div>
     </div>
   );
